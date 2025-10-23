@@ -133,7 +133,7 @@ jobs:
           chmod 755 "$source.AppImage"
           zip -q - "$source.AppImage" | gh-actions-artifact-client.js upload "$source.AppImage"
   build-linux-arm64:
-    runs-on: ubuntu-22.04-arm64
+    runs-on: ubuntu-22.04-arm
     name: Build for Linux arm64
     steps:
       - name: Checkout
